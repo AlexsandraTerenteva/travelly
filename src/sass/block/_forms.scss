@@ -1,0 +1,54 @@
+.form {
+    max-width: 700px;
+    min-height: 43px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 1.6rem;
+    .input-group {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__input {
+        width: 200px;
+        min-height: 43px;
+        margin-top: 5px;
+        padding-left: 10px;
+        border: none;
+        columns: $dark;
+        &:focus, &:active {
+            outline: none;
+        }
+    }
+    input[type="date"] {
+        padding-inline-start: 0;
+        padding-left: 10px;
+        cursor: pointer;
+    }
+    &__label {
+        color: $light;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .dropdown-city-from,
+    .dropdown-city-to {
+        margin: 0;
+        width: 200px;
+        max-height: 300px;
+        -webkit-overflow-scrolling: auto;
+        overflow-y: scroll;
+        position: absolute;
+        z-index: 3; 
+        background-color: #fff;
+        color: $dark;
+    }
+
+    .drop-list {
+        padding: 10px;
+        cursor: pointer;
+        &:hover {
+           text-decoration: underline; 
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.logo {
+    font-weight: 300;
+    &__text {
+        font-size: 3rem;
+        line-height: 3rem;
+        color: $light;
+        transition: all .5s ease;
+        &:hover {
+            color: $main-color;
+            text-decoration: none;
+        }
+        &_dark {
+            color: $main-color;
+        }
+    }
+    .icon-plane {
+        font-size: 2.5rem;  
+        margin-right: 10px;
+        &_main-color {
+            color: $main-color;
+        }
+    }
+}

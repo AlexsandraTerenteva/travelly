@@ -1,0 +1,21 @@
+.title {
+    font-family: 'Open Sans', sans-serif;
+    color: $dark;
+    &_main {
+        font-size: 5.2rem;
+        line-height: 7.1rem;
+        color: $light;
+        font-weight: 300;
+        margin-bottom: 0;
+        letter-spacing: 2.08px;
+        text-align: center;
+    }
+    &_small {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+    &_second {
+        font-size: 5rem;
+        font-weight: 300;
+    }
+}

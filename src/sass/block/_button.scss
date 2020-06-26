@@ -1,0 +1,32 @@
+.btn {
+    width: 125px;
+    min-height: 43px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    text-transform: uppercase;
+    background-color: $main-color;
+    color: $light;
+    font-weight: bold;
+    &:focus, &:active {
+        outline: none;
+    }
+    &_submit {
+        position: relative;
+        z-index: 1;
+        transition: all .5s ease;
+        &:hover {
+            background-color:  #da3417f5;
+        }
+    }
+    &_buy {
+        width: 100%;
+        min-height: 50px;
+        padding: 10px;
+        &:hover, &:active {
+            color: $light;
+            text-decoration: none;
+
+        }
+    }
+}

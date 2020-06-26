@@ -1,0 +1,53 @@
+@import 'libs/fonts';
+@import 'libs/bootstrap-reboot.min';
+@import 'base/variables';
+@import 'base//mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing:border-box;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.block {
+    display: block;
+}
+.none {
+    display: none;
+}
+
+@import 'block/header';
+@import 'block/logo';
+@import 'block/menu';
+@import 'block/main';
+@import 'block/titles';
+@import 'block/forms';
+@import 'block/button';
+@import 'block/info-ticket';
+@import 'block/destination';
+@import 'block/press';
+@import 'block/footer';
+@import 'block/ticket';
+
+@import 'block/_media';

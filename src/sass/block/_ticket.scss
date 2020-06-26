@@ -1,0 +1,120 @@
+.ticket {
+    background-color: $color-bg;
+    padding: 50px;
+    
+    &__wrap {
+        max-width: 600px;
+        min-height: 200px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        background-color: $light;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    &__btn-wrap {
+        max-width: 150px;
+        min-height: 200px;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-top: 30px;
+    }
+    &__block {
+        width: 450px;
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        border-left: 2px solid $text-color;
+    }
+    &__transfer-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-bottom: 2px solid $text-color;
+    }
+    &__transfer-name {
+        font-size: 2rem;
+    }
+    &__info {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .route {
+        &_departure {
+            margin-right: 20px;
+        }
+        &_arrival {
+            margin-left: 20px;
+        }
+        &__time {
+            font-size: 2rem;
+        }
+        &__city {
+            font-size: 1.5rem;
+            color: $text-color;
+        }
+        &__date {
+            color: $text-color;
+        }
+
+    }
+    .fly-info {
+        width: 40%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__duration {
+            color: $text-color;
+            text-align: center;
+        }
+        &__path-icon {
+            display: block;
+            position: absolute;
+            top: 10px;
+            font-size: 2rem;
+            color: $text-color;
+            transition: all .5s ease;
+            cursor: pointer;
+            &_arrival {
+                right: 0;
+            }
+            &_dep {
+                left: 0;
+            }
+            &:hover {
+                color: $main-color;
+            }
+        }
+        &__path-airport {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            font-size: 1.2rem;
+            transition: all .5s ease;
+            cursor: pointer;
+            &_arrival {
+                right: 0;
+            }
+            &_dep {
+                left: 0;
+            }
+            &:hover {
+                color: $main-color;
+            }
+        }
+        &__connector {
+            min-height: 2px;
+            width: 100%;
+            background-color: $text-color;
+
+        }
+    }
+}
